@@ -2,7 +2,14 @@
 
 function Payment (){
     return(
-        <h1>Payment</h1>
+        <div className="payment">
+            <div className="payment__content">
+                <h3>Resumen del pedido</h3>
+                <div className="payment__content--button">
+                    boton de pago con paypal
+                </div>
+            </div>
+        </div>
     );
 }
 
