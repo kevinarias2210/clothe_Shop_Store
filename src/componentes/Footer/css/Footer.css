@@ -1,0 +1,23 @@
+.footer{
+    width: 95%;
+    padding: 40px;
+    background-color: #33A8A8;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 53px;
+}
+
+.footer__p{
+    font-family: 'Noto Serif', serif;
+    font-size: 21px;
+    font-weight: 900;
+    color: white;
+}
+
+.footer__copy{
+
+}

@@ -1,0 +1,11 @@
+.productos{
+    width: 100%;
+    margin: 83px 0;
+}
+
+.productos__items{
+    margin: 0 133px 0 133px;
+    display: grid;
+    grid-template-columns: repeat(5, 294px);
+    column-gap: 30px;
+}

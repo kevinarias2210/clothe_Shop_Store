@@ -1,9 +1,9 @@
 export default {
     cart: [],
-    products: [
+    productos: [
         {
             'id': '1',
-            'image': 'https://cdn.pixabay.com/photo/2014/09/03/20/15/shoes-434918_1280.jpg',
+            'image': 'https://cdn.pixabay.com/photo/2016/08/12/00/36/legendary-1587325_1280.jpg',
             'title': 'Camiseta',
             'price': 500,
             'description': 'Lorem ipsum dolor sit amet',
@@ -60,14 +60,14 @@ export default {
         {
             'id': '9',
             'image': 'https://cdn.pixabay.com/photo/2011/11/16/11/28/earrings-10332_1280.jpg',
-            'title': 'aretes',
+            'title': 'Aretes',
             'price': 1800,
             'description': 'Lorem ipsum dolor sit amet',
         },
         {
             'id': '10',
             'image': 'https://cdn.pixabay.com/photo/2017/07/03/09/54/dog-2467149_1280.jpg',
-            'title': 'corbata',
+            'title': 'Corbata',
             'price': 50,
             'description': 'Lorem ipsum dolor sit amet',
         },

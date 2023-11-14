@@ -1,11 +1,24 @@
-/* import React from "react"; */
+import logo from "./img/logo.svg";
+import './css/Header.css';
+
 
 function Header (){
     return(
         <header className="header">
-            <h1 className="header__h1"> Store Shoes</h1>
+            <div className="header__container">
+                <img className="header__container--img" src={logo} alt="logo" />
+                
+                <div className="header__container--input">
+                    <input className="header__container--in" type="text" placeholder="Buscar"/>
+                </div>
+
+                <div className="header__container--login">
+                    <p className="header__container--p">Inicia Sesión</p>
+                    <p className="header__container--p">Regístrate</p>
+                </div>
+            </div>
             <div className="header__checkout">
-        
+
             </div>
         </header>
     );

@@ -1,0 +1,40 @@
+.header{
+    width: 93%;
+    margin: 50px 78px 0 78px;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__container--input{
+    width: 22%;
+}
+
+.header__container--in{
+    width: 95%;
+    padding: 8px;
+    border: 2px solid #33A8A8;
+    border-radius: 20px;
+}
+
+.header__container--in::placeholder{
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-weight: 500;
+    color: gray;
+}
+
+.header__container--login{
+    display: flex;
+    justify-content: center;
+}
+
+.header__container--p{
+    margin: 15px;
+    font-size: 25px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 500;
+}
