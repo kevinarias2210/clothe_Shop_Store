@@ -1,4 +1,4 @@
-/* import React from "react"; */
+import './css/Payment.css';
 
 function Payment (){
     return(
@@ -6,7 +6,7 @@ function Payment (){
             <div className="payment__content">
                 <h3>Resumen del pedido</h3>
                 <div className="payment__content--button">
-                    boton de pago con paypal
+                    <button>boton de pago con paypal</button>
                 </div>
             </div>
         </div>
