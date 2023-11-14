@@ -1,0 +1,98 @@
+.information{
+    width: 100%;
+    height: 69vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.information__content--head{
+    margin: 20px;
+}
+
+.information__content--head h2{
+    font-size: 30px ;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+}
+
+.information__content--form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.information__content--input{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #33A8A8;
+}
+
+.information__content--info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.information__content--buttons{
+    display: flex;
+}
+
+.information__content--regresar{
+    margin: 20px;
+}
+
+.information__content--regresar button{
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+.information__content--regresar button:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.information__content--next{
+    margin: 20px;
+}
+
+.information__content--next button{
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #33A8A8;
+}
+
+.information__content--next button:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.information__content--pedido{
+    display: flex;
+    align-items: center;
+}
+
+.information__content--pedido h3{
+    margin: 15px;
+    font-family: 'Noto Serif', serif;
+}
+
+.information__pedido--item{
+    margin-top: 27px;
+}
+
+.information__pedido--h4{
+    font-size: 20px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 300;
+}
+
+.information__pedido--price{
+    font-size: 22px;
+    font-weight: 600;   
+    color: #33A8A8;
+}

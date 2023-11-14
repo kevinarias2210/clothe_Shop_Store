@@ -1,0 +1,32 @@
+.payment{
+    width: 100%;
+    height: 69vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.payment__content h3{
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+}
+
+.payment__content--button button{
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    color: white;
+    background-color: #33A8A8;
+}
+
+.payment__content--button button:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}

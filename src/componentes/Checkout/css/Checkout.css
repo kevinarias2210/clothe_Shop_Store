@@ -1,0 +1,77 @@
+.checkOut{
+    width: 100%;
+    height: 69vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkOut__content{
+    width: 50%;
+}
+
+.checkOut__content--h3{
+    margin: 20px;
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+}
+
+.checkOut__content--items{
+    margin: 20px;
+}
+
+.checkOut__content--elements h4{
+    font-size: 20px;
+    font-family: 'Noto Serif', serif;
+}
+
+.checkOut__content--elements span{
+    font-size: 18px;
+    font-family: 'Noto Serif', serif;
+}
+
+.checkOut__content--button{
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+.checkOut__content--button:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.checkOut__total{
+    height: 22vh;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.checkOut__total--h3{
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+}
+
+.checkOut__total--h3 span{
+    color: #33A8A8;
+}
+
+
+.checkOut__total--continue{
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #33A8A8;
+}
+
+.checkOut__total--continue:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
