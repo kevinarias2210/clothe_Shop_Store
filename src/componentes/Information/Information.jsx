@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './css/Information.css';
 
 function Information (){
@@ -27,7 +28,9 @@ function Information (){
                             <button>regresar</button>
                         </div>
                         <div className="information__content--next">
-                            <button>pagar</button>
+                            <Link to="/checkout/payment">
+                                <button>pagar</button>
+                            </Link>
                         </div>
                     </div>
 

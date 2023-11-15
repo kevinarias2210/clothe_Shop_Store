@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './css/Checkout.css';
 
 function Checkout (){
@@ -16,7 +17,9 @@ function Checkout (){
       
       <div className="checkOut__total">
         <h3 className='checkOut__total--h3'>Precio Total: <span>$10</span> </h3>
-        <button className='checkOut__total--continue' type="button">Continuar pedido</button>
+        <Link to="/checkout/information">
+          <button className='checkOut__total--continue' type="button">Continuar pedido</button>
+        </Link>
       </div>
     </div>
   );

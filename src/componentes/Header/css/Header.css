@@ -38,3 +38,18 @@
     font-family: 'Noto Serif', serif;
     font-weight: 500;
 }
+
+.header__checkout{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__checkout--link{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 14px;
+}
+
+.header__checkout--cart{
+    width: 66%;
+}

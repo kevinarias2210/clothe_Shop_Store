@@ -1,6 +1,6 @@
 import './css/Product.css';
 
-function Product({ producto }){
+function Product({ producto, addCart }){
     return(
         <div className="productItem">
             <div className='productItem__container'>
@@ -11,7 +11,7 @@ function Product({ producto }){
                         <span className='productItem__container--span'>{` $${producto.price}`}</span>
                     </h2>
                     <p className='productItem__container--p'>{producto.description}</p>
-                    <button className='productItem__container--button' type="button">Comprar</button>
+                    <button className='productItem__container--button' type="button" onClick={addCart(producto)}>Comprar</button>
                 </div>
             </div>
             
