@@ -1,13 +1,25 @@
 .checkOut{
     width: 100%;
-    height: 62vh;
+    /* height: 62vh; */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.checkOut__h3{
+    font-size: 25px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 600;
 }
 
 .checkOut__content{
-    width: 50%;
+    width: 100%;
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 300px);
+    column-gap: 25px;
 }
 
 .checkOut__content--h3{
@@ -18,16 +30,30 @@
 
 .checkOut__content--items{
     margin: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-.checkOut__content--elements h4{
+.checkOut__content--elements{
+    display: flex;
+    flex-direction: column  ;
+}
+
+.checkOut__content--h4{
     font-size: 20px;
     font-family: 'Noto Serif', serif;
 }
 
-.checkOut__content--elements span{
+.checkOut__content--price{
     font-size: 18px;
     font-family: 'Noto Serif', serif;
+    color: #33A8A8;
+}
+
+.checkOut__content--image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .checkOut__content--button{
@@ -50,7 +76,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .checkOut__total--h3{
@@ -58,7 +84,7 @@
     font-family: 'Noto Serif', serif;
 }
 
-.checkOut__total--h3 span{
+.checkOut__total--price{
     color: #33A8A8;
 }
 

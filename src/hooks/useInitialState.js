@@ -9,19 +9,26 @@ function useInitialState(){
             ...state,
             cart: [...state.cart, paylad]
         });
-        console.log(paylad);
     };
 
     const removeCart = paylad => {
         setState({
             ...state,
-            cart: state.cart.filter(items => items.id != paylad.id)
+            cart: state.cart.filter(items => items.id !== paylad.id)
         });
     };
+
+    const addToBuy = paylad => {
+        setState({
+            ...state,
+            comprador: [...state.comprador, paylad]
+        })
+    }
 
     return{
         addToCart,
         removeCart,
+        addToBuy,
         state
     }
 }
