@@ -4,7 +4,7 @@ import { appContext } from '../../context/appContext';
 import './css/Checkout.css';
 
 function Checkout (){
-  const {state, removeCart} = React.useContext(appContext);
+  const {state, removeCart } = React.useContext(appContext);
   const { cart } = state;
 
 
@@ -15,13 +15,14 @@ function Checkout (){
   }
 
   return(
+    
     <div className="checkOut">
-      {cart.length > 0 ? <h3 className='checkOut__h3'>Lista de pedidos:</h3> : <h3 className='checkOut__h3'>Sin pedidos...</h3>}
+      {cart.length > 0 ? <h3 className='checkOut__h3-list'>Lista de pedidos:</h3> : <h3 className='checkOut__h3--sinPedidos'>Sin pedidos...</h3>}
       <div className="checkOut__content">
 
         {cart.map((item) => (
-          <>
-            <div className="checkOut__content--items" key={item.title}>
+          <div key={item.title}>
+            <div className="checkOut__content--items" >
               <div className="checkOut__content--elements">
                 <h4 className='checkOut__content--h4'>{item.title}</h4>
                 <span className='checkOut__content--price'>{item.price}</span>
@@ -30,7 +31,7 @@ function Checkout (){
                 onClick={() => removeCart(item)}>Delete Item</button>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
       
@@ -42,8 +43,9 @@ function Checkout (){
           </Link>
         </div>
       )}
-
     </div>
+
+    
   );
 }
 

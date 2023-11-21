@@ -72,8 +72,9 @@
 }
 
 .information__content--pedido{
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .information__content--pedido h3{

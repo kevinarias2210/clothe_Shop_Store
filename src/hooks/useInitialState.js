@@ -23,12 +23,20 @@ function useInitialState(){
             ...state,
             comprador: [...state.comprador, paylad]
         })
-    }
+    };
+
+    const addNewOrder = paylad => {
+        setState({
+            ...state,
+            orders: [...state.orders, paylad]
+        })
+    };
 
     return{
         addToCart,
         removeCart,
         addToBuy,
+        addNewOrder,
         state
     }
 }

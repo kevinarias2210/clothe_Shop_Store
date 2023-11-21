@@ -59,21 +59,20 @@ function Information (){
                             
                         </div>
                     </div>
+                </div>
 
-                    <div className="information__content--pedido">
+                <div className="information__content--pedido">
                         <h3>Pedido</h3>
                         {cart.map((item) => (
-                            <>
-                                <div className="information__pedido--item" key={item.title}>
+                            <div key={item.title}>
+                                <div className="information__pedido--item">
                                     <div className="information__pedido--element">
                                         <h4 className='information__pedido--h4'>{item.title}</h4>
                                         <span className='information__pedido--price'>{item.price}</span>
                                     </div>
                                 </div>
-                            </>
+                            </div>
                         ))}
-                    </div>
-
                 </div>
 
             </div>
