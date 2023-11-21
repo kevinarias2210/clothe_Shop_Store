@@ -61,9 +61,18 @@ function Payment (){
                         <PayPalButtons 
                             paypalOptions={paypalOptions}
                             buttonStyles={buttonStyles}
-                            amount={totalItem()}
+                            createOrder={(data, actions) => {//La data es obligatorio, o si no botará un error y no abrirá la opción de pago
+                                return actions.order.create({
+                                    purchase_units: [{
+                                    amount: {
+                                        currency_code: "USD",
+                                        value: totalItem()
+                                        }
+                                    }],
+                                });
+                            }}
                             onApprove={data => paymentSuccess(data)}//Esto se muestra cuando el pago ha sido aprovado
-                            onSuccess={data => paymentSuccess(data)}
+                            onPaymentSuccess={data => paymentSuccess(data)}
                             onError={error => console.log(error)}
                             onCancel={data => console.log(data)}
                         />

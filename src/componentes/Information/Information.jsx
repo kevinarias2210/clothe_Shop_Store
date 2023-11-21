@@ -64,7 +64,7 @@ function Information (){
                 <div className="information__content--pedido">
                         <h3>Pedido</h3>
                         {cart.map((item) => (
-                            <div key={item.title}>
+                            <div key={item.id}>
                                 <div className="information__pedido--item">
                                     <div className="information__pedido--element">
                                         <h4 className='information__pedido--h4'>{item.title}</h4>
