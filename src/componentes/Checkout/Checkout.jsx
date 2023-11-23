@@ -25,7 +25,7 @@ function Checkout (){
             <div className="checkOut__content--items" >
               <div className="checkOut__content--elements">
                 <h4 className='checkOut__content--h4'>{item.title}</h4>
-                <span className='checkOut__content--price'>{item.price}</span>
+                <span className='checkOut__content--price'>$ {item.price}</span>
                 <img className='checkOut__content--image' src={item.image} alt={item.title} />
               <button className='checkOut__content--button' type="button" 
                 onClick={() => removeCart(item)}>Delete Item</button>

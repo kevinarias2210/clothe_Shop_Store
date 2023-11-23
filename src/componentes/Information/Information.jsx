@@ -68,7 +68,7 @@ function Information (){
                                 <div className="information__pedido--item">
                                     <div className="information__pedido--element">
                                         <h4 className='information__pedido--h4'>{item.title}</h4>
-                                        <span className='information__pedido--price'>{item.price}</span>
+                                        <span className='information__pedido--price'>$ {item.price}</span>
                                     </div>
                                 </div>
                             </div>

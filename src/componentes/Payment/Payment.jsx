@@ -27,15 +27,21 @@ function Payment (){
         shape: 'rect'
     };
 
+    /* const ButtonWrapper = () => {
+        React.useEffect(() => {
+            navigate('/checkout/success');
+        }, []);
+    } */
 
     const paymentSuccess = (data) => {
         console.log(data);
         navigate('/checkout/success');
+
         if(data.status === 'COMPLETED'){
             const newOrder = {
                 comprador,
                 productos: cart,
-                payment: data
+                payment: data,
             }
             
             addNewOrder(newOrder);
@@ -46,16 +52,18 @@ function Payment (){
         <div className="payment">
             <div className="payment__content">
                 <h3>Resumen del pedido</h3>
-                {cart.map((item) => (
-                    <div key={item.title}>
-                        <div className='payment__content--item' > 
-                            <div className="payment__content--element">
-                                <h4 className='payment__content--h4'>{item.title}</h4>
-                                <span className='payment__content--span'>`$ {item.price}`</span>
+                <div className='payment__content--items'>
+                    {cart.map((item) => (
+                        <div key={item.title}>
+                            <div className='payment__content--item' > 
+                                <div className="payment__content--element">
+                                    <h4 className='payment__content--h4'>{item.title}</h4>
+                                    <span className='payment__content--span'>$ {item.price}</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
                 <div className="payment__content--button">
                     <PayPalScriptProvider>
                         <PayPalButtons 
@@ -72,7 +80,7 @@ function Payment (){
                                 });
                             }}
                             onApprove={data => paymentSuccess(data)}//Esto se muestra cuando el pago ha sido aprovado
-                            onPaymentSuccess={data => paymentSuccess(data)}
+                            onSuccess={data => paymentSuccess(data)}
                             onError={error => console.log(error)}
                             onCancel={data => console.log(data)}
                         />

@@ -28,6 +28,10 @@
     font-family: 'Noto Serif', serif;
 }
 
+.checkOut__h3-list{
+    font-size: 30px;
+}
+
 .checkOut__content--items{
     margin: 20px;
     display: flex;

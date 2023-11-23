@@ -13,12 +13,31 @@
     flex-direction: column;
 }
 
-.succes__content--h2{
+.succes__content--info{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.succes__content--title{
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Noto Serif', serif;
+}
+
+.succes__content--name{
+    color: #33A8A8;
+    font-weight: 600;
+}
+
+.succes__content--p{
     font-size: 30px;
     font-family: 'Noto Serif', serif;
 }
 
-.succes__content--span{
-    font-size: 20px;
-    font-family: 'Noto Serif', serif;
+.succes__content--address{
+    font-size: 30px;
+    font-weight: 600;
+    color: #33A8A8;
 }
