@@ -1,4 +1,4 @@
-/* import React from "react"; */
+import {useState} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 /* import { Layout } from '../componentes/Layout/Layout'; */
 import { Header } from "../componentes/Header/Header";
@@ -14,11 +14,12 @@ import { useInitialState } from "../hooks/useInitialState";
 
 function App () {
     const initialState = useInitialState();
+    const [search, setSearch] = useState('');
 
     return(
         <appContext.Provider value={initialState}>
             <BrowserRouter>
-                    <Header />
+                    <Header searchValue={search} setSearchValue={setSearch}/>
                     <Routes>
                         <Route exact path="/" element={<Home />} />
                         <Route exact path="/checkout" element={<Checkout />} />

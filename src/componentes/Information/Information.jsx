@@ -1,11 +1,11 @@
-import React from 'react';
+import { useContext, useRef} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { appContext } from '../../context/appContext';
 import './css/Information.css';
 
 function Information (){
-    const { state, addToBuy} = React.useContext(appContext);
-    const form = React.useRef(null);
+    const { state, addToBuy} = useContext(appContext);
+    const form = useRef(null);
     const navigate = useNavigate();
     const { cart } = state;
 

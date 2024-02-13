@@ -1,8 +1,8 @@
-import React from "react";
+import { useState } from "react";
 import cosas from "../cosas";
 
 function useInitialState(){
-    const [state, setState] = React.useState(cosas);
+    const [state, setState] = useState(cosas);
 
     const addToCart = paylad => {
         setState({

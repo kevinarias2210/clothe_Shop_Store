@@ -1,11 +1,11 @@
-import React from 'react';
+import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { appContext } from '../../context/appContext';
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import './css/Payment.css';
 
 function Payment (){
-    const { state, addNewOrder } = React.useContext(appContext);
+    const { state, addNewOrder } = useContext(appContext);
     const { cart, comprador } = state;
 
     const navigate = useNavigate();
@@ -28,7 +28,7 @@ function Payment (){
     };
 
     /* const ButtonWrapper = () => {
-        React.useEffect(() => {
+        useEffect(() => {
             navigate('/checkout/success');
         }, []);
     } */

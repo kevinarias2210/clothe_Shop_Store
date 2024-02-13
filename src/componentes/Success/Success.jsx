@@ -1,9 +1,9 @@
-import React from 'react';
+import { useContext } from 'react';
 import { appContext } from '../../context/appContext';
 import './css/Success.css';
 
 function Success (){
-    const { state } = React.useContext(appContext);
+    const { state } = useContext(appContext);
     const { comprador } = state;
 
     return(
